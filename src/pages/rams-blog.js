@@ -19,24 +19,14 @@ console.log(posts,'posts');
           <div className="wrapper">
             <h2 className="section-headline">About Blogger</h2>
             <div>
-           {posts[0].node.aboutTheBlog.content.map((item,index)=>{
-                           
-                
+           {posts[0].node.aboutTheBlog.content.map((item,index)=>{        
                    return ( <p key={item.content[0].value}> {item.content[0].value} </p> )
                
             })}
       
 
             </div>
-            {/* { <ul className="article-list">
-              {posts.map(({ node }) => {
-                return (
-                  <li key={node.slug}>
-                    <ArticlePreview article={node} />
-                  </li>
-                )
-              })}
-            </ul> } */}
+       
       
             <h3>{posts[0].node.nameOfTheUser}</h3>
           </div>
